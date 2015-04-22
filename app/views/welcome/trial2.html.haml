@@ -1,0 +1,991 @@
+#page
+  %header
+    #top
+      .container
+        %p.pull-left.text-note Free Shipping on all U.S orders over $50
+        %ul.nav.nav-pills.nav-top.navbar-right
+          %li.dropdown.langs
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %img{:alt => "English", :src => "images/flags/en.gif"}
+                %span.caret
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "AR", :src => "images/flags/ar.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "CA", :src => "images/flags/ca.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "DE", :src => "images/flags/de.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "ES", :src => "images/flags/es.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "ET", :src => "images/flags/et.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "FA", :src => "images/flags/fa.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "FR", :src => "images/flags/fr.gif"}/
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "JA", :src => "images/flags/ja.gif"}/
+          %li.dropdown.my-account
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              My Account
+              %span.caret
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"} My Dashboard
+              %li
+                %a{:href => "#"} Account Information
+              %li
+                %a{:href => "#"} Address Book
+              %li
+                %a{:href => "#"} My Orders
+          %li.dropdown.menu-shop
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %i.fa.fa-shopping-cart
+              %span.shopping-bag 9
+            .dropdown-menu
+              %h3 Recently added item(s)
+              %ul.list-unstyled.list-thumbs-pro
+                %li.product
+                  .product-thumb-info
+                    %a.product-remove{:href => "#"}
+                      %i.fa.fa-trash-o
+                    .product-thumb-info-image
+                      %a{:href => "shop-product-detail1.html"}
+                        %img{:alt => "", :src => "images/content/products/product-1.jpg", :width => "60"}/
+                    .product-thumb-info-content
+                      %h4
+                        %a{:href => "shop-product-detail2.html"} Denim shirt
+                      %span.item-cat
+                        %small
+                          %a{:href => "#"} Jackets
+                      %span.price 29.99 USD
+                %li.product
+                  .product-thumb-info
+                    %a.product-remove{:href => "#"}
+                      %i.fa.fa-trash-o
+                    .product-thumb-info-image
+                      %a{:href => "shop-product-detail1.html"}
+                        %img{:alt => "", :src => "images/content/products/product-2.jpg", :width => "60"}/
+                    .product-thumb-info-content
+                      %h4
+                        %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                      %span.item-cat
+                        %small
+                          %a{:href => "#"} Jackets
+                      %span.price 29.99 USD
+                %li.product
+                  .product-thumb-info
+                    %a.product-remove{:href => "#"}
+                      %i.fa.fa-trash-o
+                    .product-thumb-info-image
+                      %a{:href => "shop-product-detail1.html"}
+                        %img{:alt => "", :src => "images/content/products/product-3.jpg", :width => "60"}/
+                    .product-thumb-info-content
+                      %h4
+                        %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                      %span.item-cat
+                        %small
+                          %a{:href => "#"} Jackets
+                      %span.price 29.99 USD
+              %ul.list-inline.cart-subtotals.text-right
+                %li.cart-subtotal
+                  %strong Subtotal
+                %li.price
+                  %span.amount
+                    %strong $431
+              .cart-buttons.text-right
+                %button.btn.btn-white View Cart
+                %button.btn.btn-primary Checkout
+    %nav.navbar.navbar-default.navbar-main.navbar-main-slide{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.logo{:href => "index.html"}
+            %img{:alt => "Flatize", :src => "images/logo.png"}/
+        %ul.nav.navbar-nav.navbar-act.pull-right
+          %li.login
+            %a{:href => "javascript:void(0);"}
+              %i.fa.fa-user
+          %li.search
+            %a{"data-target" => ".bs-example-modal-lg", "data-toggle" => "modal", :href => "javascript:void(0);"}
+              %i.fa.fa-search
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.pull-right
+            %li.dropdown.active
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Home
+              %ul.dropdown-menu
+                %li.active
+                  %a{:href => "index-2.html"} Home Version 2
+                %li
+                  %a{:href => "index-3.html"} Home Version 3
+                %li
+                  %a{:href => "index-4.html"} Home Version 4
+            %li.dropdown.megamenu
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Shop
+              .dropdown-menu
+                .mega-menu-content
+                  .row
+                    .col-md-4.hidden-sm.hidden-xs.menu-column
+                      %h3 Trends
+                      %ul.list-unstyled.sub-menu.list-thumbs-pro
+                        %li.product
+                          .product-thumb-info
+                            .product-thumb-info-image
+                              %a{:href => "shop-product-detail1.html"}
+                                %img{:alt => "", :src => "images/content/products/product-1.jpg", :width => "60"}/
+                            .product-thumb-info-content
+                              %h4
+                                %a{:href => "shop-product-detail2.html"} Denim shirt
+                              %span.item-cat
+                                %small
+                                  %a{:href => "#"} Jackets
+                              %span.price 29.99 USD
+                        %li.product
+                          .product-thumb-info
+                            .product-thumb-info-image
+                              %a{:href => "shop-product-detail1.html"}
+                                %img{:alt => "", :src => "images/content/products/product-2.jpg", :width => "60"}/
+                            .product-thumb-info-content
+                              %h4
+                                %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                              %span.item-cat
+                                %small
+                                  %a{:href => "#"} Jackets
+                              %span.price 29.99 USD
+                        %li.product
+                          .product-thumb-info
+                            .product-thumb-info-image
+                              %a{:href => "shop-product-detail1.html"}
+                                %img{:alt => "", :src => "images/content/products/product-3.jpg", :width => "60"}/
+                            .product-thumb-info-content
+                              %h4
+                                %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                              %span.item-cat
+                                %small
+                                  %a{:href => "#"} Jackets
+                              %span.price 29.99 USD
+                    .col-md-2.menu-column
+                      %h3 Man
+                      %ul.list-unstyled.sub-menu
+                        %li
+                          %a{:href => "#"} Jackets
+                        %li
+                          %a{:href => "#"} Blazers
+                        %li
+                          %a{:href => "#"} Suits
+                        %li
+                          %a{:href => "#"} Trousers
+                        %li
+                          %a{:href => "#"} Jeans
+                        %li
+                          %a{:href => "#"} Shirts
+                        %li
+                          %a{:href => "#"} Sweatshirts &amp; Hoodies
+                        %li
+                          %a{:href => "#"} Swimwear
+                        %li
+                          %a{:href => "#"} Accessories
+                    .col-md-2.menu-column
+                      %h3 Woman
+                      %ul.list-unstyled.sub-menu
+                        %li
+                          %a{:href => "#"} Coats
+                        %li
+                          %a{:href => "#"} Outerwear
+                        %li
+                          %a{:href => "#"} Dresses
+                        %li
+                          %a{:href => "#"} Tops
+                        %li
+                          %a{:href => "#"} Trousers
+                        %li
+                          %a{:href => "#"} Shirts
+                        %li
+                          %a{:href => "#"} Jeans
+                        %li
+                          %a{:href => "#"} T-shirts
+                        %li
+                          %a{:href => "#"} Shoes
+                        %li
+                          %a{:href => "#"} Handbags
+                        %li
+                          %a{:href => "#"} Stock clearance
+                    .col-md-4.hidden-sm.hidden-xs.menu-column
+                      %h3 Explore new collection
+                      %ul.list-unstyled.sub-menu.list-md-pro
+                        %li.product
+                          .product-thumb-info
+                            .product-thumb-info-image
+                              %a{:href => "shop-product-detail1.html"}
+                                %img.img-responsive{:alt => "", :src => "images/content/products/ad-1.png", :width => "330"}/
+                            .product-thumb-info-content
+                              %h4
+                                %a{:href => "shop-product-detail2.html"} Men’s Fashion and Style
+                              %p Whatever you’re looking for, be it the latest fashion trends, cool outfit ideas or new ways to wear your favourite pieces, we’ve got all the style inspiration you need.
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Pages
+              %ul.dropdown-menu
+                %li.dropdown-submenu
+                  %a{:href => "#"} Shop
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "shop-full-width.html"} Shop - Full Width
+                    %li
+                      %a{:href => "shop-sidebar.html"} Shop - Sidebar
+                    %li
+                      %a{:href => "shop-list-sidebar.html"} Shop List - Sidebar
+                    %li
+                      %a{:href => "shop-product-detail1.html"} Shop - Product Detail 1
+                    %li
+                      %a{:href => "shop-product-detail2.html"} Shop - Product Detail 2
+                    %li
+                      %a{:href => "shop-cart-full.html"} Shop - Cart Full
+                    %li
+                      %a{:href => "shop-cart-sidebar.html"} Shop - Cart Sidebar
+                    %li
+                      %a{:href => "shop-checkout.html"} Shop - Checkout
+                %li
+                  %a{:href => "index-white.html"} Mega Menu White
+                %li
+                  %a{:href => "page-404.html"} 404 Error Page
+            %li
+              %a{:href => "shortcodes.html"} Shortcodes
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Blog
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "blog-sidebar.html"} Blog Sidebar
+                %li
+                  %a{:href => "blog-mini-sidebar.html"} Blog Mini Sidebar
+                %li
+                  %a{:href => "blog-masonry.html"} Blog Masonry
+                %li
+                  %a{:href => "blog-single.html"} Blog Single
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Contact
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "page-contact1.html"} Contact Version 1
+                %li
+                  %a{:href => "page-contact2.html"} Contact Version 2
+        / /.nav-collapse
+      / /.container-fluid
+  / Begin Login
+  .login-wrapper
+    %form#form-login{:role => "form"}
+      %h4 Login
+      %p If you're a member, login here.
+      .form-group
+        %label{:for => "inputusername"} Username
+        %input#inputusername.form-control.input-lg{:placeholder => "Username", :type => "text"}
+      .form-group
+        %label{:for => "inputpassword"} Password
+        %input#inputpassword.form-control.input-lg{:placeholder => "Password", :type => "password"}
+      %ul.list-inline
+        %li
+          %a{:href => "#"} Create new account
+        %li
+          %a{:href => "#"} Request new password
+      %button.btn.btn-white{:type => "submit"} Log in
+  / End Login
+  / Begin Main
+  .main{:role => "main"}
+    / Begin Main Slide
+    %section.main-slide
+      .container
+        #owl-second-demo.owl-carousel.main-demo.second-demo
+          .item
+            %img.img-responsive{:alt => "Photo", :src => "images/content/slides/home-slider1.jpg"}
+              .item-caption
+                .item-caption-inner
+                  .item-caption-wrap
+                    %p.item-cat
+                      %a{:href => "#"} Fall/Winter 2014
+                    %h2
+                      Up to 50% off
+                      %br on selected items
+                    %a.btn.btn-white.hidden-xs{:href => "#"} Shop Now
+          .item
+            %img.img-responsive{:alt => "Photo", :src => "images/content/slides/home-slider2.jpg"}
+              .item-caption
+                .item-caption-inner
+                  .item-caption-wrap
+                    %p.item-cat
+                      %a{:href => "#"} Top
+                    %h2
+                      25% off
+                      %br for pink swim
+                    %a.btn.btn-white.hidden-xs{:href => "#"} Shop Now
+          .item
+            %img.img-responsive{:alt => "Photo", :src => "images/content/slides/home-slider3.jpg"}
+              .item-caption
+                .item-caption-inner
+                  .item-caption-wrap
+                    %p.item-cat
+                      %a{:href => "#"} Panties
+                    %h2
+                      Free shipping
+                      %br on $50 plus $20
+                    %a.btn.btn-white.hidden-xs{:href => "#"} Shop Now
+    / End Main Slide
+    / Begin Ads
+    %section.collections
+      .container
+        .row
+          .col-xs-4.collect-item.animation
+            %a.collect-item-thumb{:href => "#"}
+              %img.img-responsive{:alt => "Ad", :src => "images/content/products/collect-1.jpg"}/
+            %h2 T-shirts for all your summer
+            %p Elementum vel augue eu, congue accumsan nulla. Curabitur blandit lectus nunc, ac egestas quam facilisis sit amet.
+            %a.btn{:href => "#"} Read More
+          .col-xs-4.collect-item.animation
+            %a.collect-item-thumb{:href => "#"}
+              %img.img-responsive{:alt => "Ad", :src => "images/content/products/collect-2.jpg"}/
+            %h2 Womens wear collections
+            %p Vestibulum metus diam, elementum vel augue eu, congue accumsan nulla. Curabitur blandit lectus nunc, ac egestas quam facilisis.
+            %a.btn{:href => "#"} Read More
+          .col-xs-4.collect-item.animation
+            %a.collect-item-thumb{:href => "#"}
+              %img.img-responsive{:alt => "Ad", :src => "images/content/products/collect-3.jpg"}/
+            %h2 Accesories LookBook 2014
+            %p Curabitur blandit lectus nunc, ac egestas quam facilisis sit amet. Vestibulum metus diam, elementum vel congue accumsan nulla.
+            %a.btn{:href => "#"} Read More
+    / End Ads
+    / Begin Lookbook Women
+    %section#lookbook
+      .container
+        #bg-red.lookbook
+          %h2 Free Shipping on orders over $75
+          %p Etiam aliquam risus ante, quis ultrices enim porta a. Integer et dolor sit amet enim feugiat faucibus. Donec sit amet egestas orci. Proin facilisis mi ornare turpis sollicitudin; vel rutrum est viverra. Vestibulum hendrerit egestas semper.
+    / End Lookbook Women
+    / Begin Top Selling
+    %section.products-slide
+      .container
+        %h2.title
+          %span Latest Products
+        .row
+          #owl-product-slide.owl-carousel.product-slide
+            .col-md-12.animation
+              .item.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-1.jpg"}
+                  .product-thumb-info-content
+                    %span.price.pull-right 29.99 USD
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Denim shirt
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Jackets
+            .col-md-12.animation
+              .item.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-2.jpg"}
+                  .product-thumb-info-content
+                    %span.price.pull-right 25.99 USD
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Shirts
+            .col-md-12.animation
+              .item.product
+                %a{:href => "shop-product-detail1.html"}
+                  %span.bag.bag-hot Hot
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-3.jpg"}
+                  .product-thumb-info-content
+                    %span.price.pull-right 25.99 USD
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Stock clearance
+            .col-md-12.animation
+              .item.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-4.jpg"}
+                  .product-thumb-info-content
+                    %span.price.pull-right 59.99 USD
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Waistcoat with top stitching
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Blazers
+            .col-md-12.animation
+              .item.product
+                %a{:href => "shop-product-detail1.html"}
+                  %span.bag.bag-cool Cool
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-5.jpg"}
+                  .product-thumb-info-content
+                    %span.price.pull-right 39.99 USD
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Loose fit ripped jeans
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Jeans
+    / End Top Selling
+    / Begin Parallax
+    %section.pi-parallax.parallax-shop{"data-stellar-background-ratio" => "0.6"}
+      .container
+        #owl-text-slide.owl-carousel
+          .item
+            .intro
+              %h2 Men’s Fashion and Style
+              %span.divider
+              %p Whatever you’re looking for, be it the latest fashion trends, cool outfit ideas or new ways to wear your favourite pieces, we’ve got all the style inspiration you need.
+              %a.btn.btn-white.hidden-xs{:href => "#"} Shop Now
+          .item
+            .intro
+              %h2 Men’s Fashion and Style 2
+              %span.divider
+              %p Whatever you’re looking for, be it the latest fashion trends, cool outfit ideas or new ways to wear your favourite pieces, we’ve got all the style inspiration you need.
+              %a.btn.btn-white.hidden-xs{:href => "#"} Shop Now
+    / End Parallax
+    / Begin List Thumbs
+    %section.list-thumbs
+      .container
+        .row
+          .col-sm-4.featured.animation
+            %h3 Featured
+            .row
+              #owl-featured-slide.owl-carousel.product-slide.product-thumbs-slide
+                .col-md-12
+                  .item
+                    %ul.list-unstyled.list-thumbs-pro
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-4.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Waistcoat with top stitching
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-5.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-6.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                .col-md-12
+                  .item
+                    %ul.list-unstyled.list-thumbs-pro
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-24.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Chain necklace
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Accessories
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-23.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Double chain necklace
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Accessories
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "images/content/products/product-22.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Zigzag pattern cap
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Caps and Hats
+                            %span.price 29.99 USD
+          .col-sm-4.bestseller.animation
+            %h3 Bestseller
+            %ul.list-unstyled.list-thumbs-pro
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-10.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Striped full skirt
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Skirts
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-11.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Structured double-breasted blazer
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Outerwear
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-12.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Sheer overlay dress
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Dresses
+                    %span.price 29.99 USD
+          .col-sm-4.trends.animation
+            %h3 Trends
+            %ul.list-unstyled.list-thumbs-pro
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-7.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Striped sweater
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Stock clearance
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-8.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Checked shirt with pocket
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Shirts
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "images/content/products/product-9.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Classic blazer
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Outerwear
+                    %span.price 29.99 USD
+        %ul.list-inline.wp-ads.animation
+          %li
+            %i.fa.fa-plane
+            %strong Delivery worldwide
+            %span See all conditions
+          %li
+            %i.fa.fa-refresh
+            %strong 30 days returns
+            %span For a smooth shopping
+          %li
+            %i.fa.fa-phone
+            %strong 0123 456 789
+            %span Contact Customer
+          %li
+            %i.fa.fa-lock
+            %strong 30 days returns
+            %span For a smooth shopping
+          %li
+            %i.fa.fa-question-circle
+            %strong Shopping Guide
+            %span Contact Customer
+    / End List Thumbs
+  / End Main
+  / Begin footer
+  %footer.footer
+    .container
+      .upper-foot
+        .row
+          .col-xs-6.col-sm-3
+            %h2 Contact detail
+            %address
+              %i.fa.fa-map-marker
+              No.123 Pellentesque nec erat.
+              %br
+                Aenean semper, neque non faucibus.
+                %br
+                  %i.fa.fa-phone
+                  Phone. (123) 456-7890
+                  %br
+                    %i.fa.fa-fax
+                    Fax. (123) 456-7890
+                    %br
+                      %i.fa.fa-envelope
+                      E-mail.
+                      %a{:href => "mailto:#"} first.last@example.com
+          .col-xs-6.col-sm-3
+            %h2 Useful links
+            %ul.list-unstyled
+              %li
+                %a{:href => "#"} Track Orders
+              %li
+                %a{:href => "#"} FAQs
+              %li
+                %a{:href => "#"} Services
+              %li
+                %a{:href => "#"} Free Credit Report
+              %li
+                %a{:href => "#"} Terms and Conditions
+              %li
+                %a{:href => "#"} Privacy Policy
+              %li
+                %a{:href => "#"} Community Guidelines
+          .col-xs-6.col-sm-3
+            %h2 Tags
+            %ul.list-inline.tagclouds
+              %li
+                %a{:href => "#"} Image
+              %li
+                %a{:href => "#"} Features
+              %li
+                %a{:href => "#"} Gallery
+              %li
+                %a{:href => "#"} Post Formats
+              %li
+                %a{:href => "#"} Typography
+              %li
+                %a{:href => "#"} WooCommerce
+              %li
+                %a{:href => "#"} Shortcodes
+              %li
+                %a{:href => "#"} Best Sellers
+              %li
+                %a{:href => "#"} Slideshow
+          .col-xs-6.col-sm-3
+            %h2 Don’t miss out
+            %p In venenatis neque a eros laoreet eu placerat erat suscipit. Fusce cursus, erat ut scelerisque.
+            %form.form-inline.form-newsletter{:role => "form"}
+              .form-group
+                %label.sr-only{:for => "exampleInputEmail2"} Email address
+                %input#exampleInputEmail2.form-control{:placeholder => "Enter your email here", :type => "email"}
+              %button.btn{:type => "submit"}
+                %i.fa.fa-caret-right
+      .below-foot
+        .row
+          .col-xs-6.copyrights
+            %p
+              Copyright © 2013 Flatize. Designed by
+              %a{:href => "http://pixelgeeklab.com/"} PixelGeekLab
+              %br
+                All rights reserved.
+          .col-xs-6.text-right
+            %ul.list-inline.social-list
+              %li
+                %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Facebook"}
+                  %i.fa.fa-facebook
+              %li
+                %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Twitter"}
+                  %i.fa.fa-twitter
+              %li
+                %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Google+"}
+                  %i.fa.fa-google-plus
+              %li
+                %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Pinterest"}
+                  %i.fa.fa-pinterest
+              %li
+                %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "RSS"}
+                  %i.fa.fa-rss
+  / End footer
+/ Begin Quickview
+.modal.fade.quickview-wrapper{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-lg
+    .modal-content
+      %button.close{"data-dismiss" => "modal", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+        %span.sr-only Close
+      .product-detail
+        .row
+          .col-sm-6
+            .product-preview
+              %ul#slider1.bxslider
+                %li
+                  %img.img-responsive{:alt => "", :src => "images/content/products/product-1.jpg"}/
+                %li
+                  %img.img-responsive{:alt => "", :src => "images/content/products/product-1-1.jpg"}/
+                %li
+                  %img.img-responsive{:alt => "", :src => "images/content/products/product-1-2.jpg"}/
+                %li
+                  %img.img-responsive{:alt => "", :src => "images/content/products/product-1-3.jpg"}/
+                %li
+                  %img.img-responsive{:alt => "", :src => "images/content/products/product-1-4.jpg"}/
+              %ul.list-inline.bx-pager
+                %li
+                  %a{"data-slide-index" => "0", :href => ""}
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-thumb.jpg"}/
+                %li
+                  %a{"data-slide-index" => "1", :href => ""}
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-thumb-1.jpg"}/
+                %li
+                  %a{"data-slide-index" => "2", :href => ""}
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-thumb-2.jpg"}/
+                %li
+                  %a{"data-slide-index" => "3", :href => ""}
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-thumb-3.jpg"}/
+                %li
+                  %a{"data-slide-index" => "4", :href => ""}
+                    %img.img-responsive{:alt => "", :src => "images/content/products/product-thumb-4.jpg"}/
+          .col-sm-6
+            .summary.entry-summary
+              %h3 Denim Trousers with faux leather details
+              .reviews-counter.clearfix
+                .rating.five-stars.pull-left
+                  .star-rating
+                  .star-bg
+                %span 3 Reviews
+              %p.price
+                %span.amount $29.99
+              %ul.list-inline.list-select.clearfix
+                %li
+                  .list-sort
+                    %select.formDropdown
+                      %option Select Size
+                      %option XS
+                      %option S
+                      %option M
+                      %option L
+                      %option XL
+                      %option XXL
+                %li.color
+                  %a.color1{:href => "#"}
+                %li.color
+                  %a.color2{:href => "#"}
+                %li.color
+                  %a.color3{:href => "#"}
+                %li.color
+                  %a.color4{:href => "#"}
+              %form.cart{:method => "post"}
+                .quantity.pull-left
+                  %input.minus{:type => "button", :value => "-"}
+                    %input.input-text.qty{:min => "1", :name => "quantity", :step => "1", :title => "Qty", :type => "text", :value => "1"}
+                      %input.plus{:type => "button", :value => "+"}
+                %a.btn.btn-grey{:href => "#"}
+                  %span
+                    %i.fa.fa-heart
+                %button.btn.btn-primary.btn-icon{:href => "#"}
+                  %i.fa.fa-shopping-cart
+                  Add to cart
+              %ul.list-unstyled.product-meta
+                %li Sku: 54329843
+                %li
+                  Categories:
+                  %a{:href => "#"} Leather
+                  %a{:href => "#"} Jeans
+                  %a{:href => "#"} Men
+                %li
+                  Tags:
+                  %a{:href => "#"} Shoes
+                  %a{:href => "#"} Jeans
+                  %a{:href => "#"} Men
+                  %a{:href => "#"} T-shirt
+              #accordion.panel-group
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title
+                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"} Description
+                  #collapseOne.panel-collapse.collapse.in
+                    .panel-body
+                      %p Korem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. qui dolorem ipsum quia dolor sit amet.
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title
+                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"} Addition Information
+                  #collapseTwo.panel-collapse.collapse
+                    .panel-body
+                      %p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .panel.panel-default
+                  .panel-heading
+                    %h4.panel-title
+                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"} Reviews (3)
+                  #collapseThree.panel-collapse.collapse
+                    .panel-body.post-comments
+                      %ul.comments
+                        %li
+                          .comment
+                            .img-circle
+                              %img.avatar{:alt => "", :src => "images/content/blog/avatar.png", :width => "50"}                                 .comment-block
+                              %span.comment-by
+                                %strong Frank Reman
+                              %span.date
+                                %small
+                                  %i.fa.fa-clock-o
+                                  January 12, 2013
+                              %p Lorem ipsum dolor sit amet.
+                        %li
+                          .comment
+                            .img-circle
+                              %img.avatar{:alt => "", :src => "images/content/blog/avatar.png", :width => "50"}                                 .comment-block
+                              %span.comment-by
+                                %strong Frank Reman
+                              %span.date
+                                %small
+                                  %i.fa.fa-clock-o
+                                  July 11, 2014
+                              %p Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae
+                        %li
+                          .comment
+                            .img-circle
+                              %img.avatar{:alt => "", :src => "images/content/blog/avatar.png", :width => "50"}                                 .comment-block
+                              %span.comment-by
+                                %strong Frank Reman
+                              %span.date
+                                %small
+                                  %i.fa.fa-clock-o
+                                  July 11, 2014
+                              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+/ End Quickview
+/ Begin Search
+.modal.fade.bs-example-modal-lg.search-wrapper{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-lg
+    .modal-content
+      %p.clearfix
+        %button.close{"data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+          %span.sr-only Close
+      %form.form-inline.form-search{:role => "form"}
+        .form-group
+          %label.sr-only{:for => "textsearch"} Enter text search
+          %input#textsearch.form-control.input-lg{:placeholder => "Enter text search", :type => "text"}
+        %button.btn.btn-white{:type => "submit"} Search
+/ End Search
+/ Begin Style Switcher
+#style-switcher
+  #toggle_button
+    %a{:href => "#"}
+      %i.fa.fa-pencil
+  #style-switcher-menu
+    %h4.text-center Style Switcher
+    .segment
+      %ul#bd_value.theme.cookie_layout_style.level-0
+        %li
+          %a{:href => "#", :style => "background: #3598db", :title => "colors/blue/style"}
+        %li
+          %a{:href => "#", :style => "background: #c2a772", :title => "colors/brown/style"}
+        %li
+          %a{:href => "#", :style => "background: #36c877", :title => "colors/green/style"}
+        %li
+          %a{:href => "#", :style => "background: #e99b1f", :title => "colors/orange/style"}
+        %li
+          %a{:href => "#", :style => "background: #f64243", :title => "colors/red/style"}
+        %li
+          %a{:href => "#", :style => "background: #a57bcd", :title => "colors/violet/style"}
+        %li
+          %a{:href => "#", :style => "background: #e9bf1d", :title => "colors/yellow/style"}
+    .segment
+      %ul.theme.layouts
+        %li.btn.btn-sm.btn-black{"data-layout" => "boxed"} Boxed
+        %li.btn.btn-black.btn-sm.btn-active{"data-layout" => "widescreen"} Widescreen
+    .segment
+      #reset
+        %a.btn.btn-sm.btn-greyer.reset{:href => "#"} Reset
+/ Begin Style Switcher
+/ jQuery (necessary for Bootstrap's JavaScript plugins)
+%script{:src => "vendor/jquery.min.js"}
+/ Include all compiled plugins (below), or include individual files as needed
+%script{:src => "bootstrap/js/bootstrap.min.js"}
+%script{:src => "bootstrap/js/bootstrap-hover-dropdown.min.js"}
+%script{:src => "vendor/owl-carousel/owl.carousel.js"}
+%script{:src => "vendor/modernizr.custom.js"}
+%script{:src => "vendor/jquery.stellar.js"}
+%script{:src => "vendor/imagesloaded.pkgd.min.js"}
+%script{:src => "vendor/masonry.pkgd.min.js"}
+%script{:src => "vendor/jquery.pricefilter.js"}
+%script{:src => "vendor/bxslider/jquery.bxslider.min.js"}
+%script{:src => "vendor/mediaelement-and-player.js"}
+%script{:src => "vendor/waypoints.min.js"}
+%script{:src => "vendor/flexslider/jquery.flexslider-min.js"}
+/ Theme Initializer
+%script{:src => "js/theme.plugins.js"}
+%script{:src => "js/theme.js"}
+/ Style Switcher
+%script{:src => "style-switcher/js/switcher.js", :type => "text/javascript"}
