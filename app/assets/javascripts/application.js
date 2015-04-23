@@ -11,5 +11,21 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.validation/jquery.validation
+//= require moment
+//= require bootstrap-hover-dropdown.min
+//= require bootstrap-datetimepicker.min
+//= require owl-carousel/owl.carousel
+//= require modernizr.custom
+//= require jquery.stellar
+//= require imagesloaded.pkgd.min
+//= require masonry.pkgd.min
+//= require jquery.pricefilter
+//= require bxslider/jquery.bxslider.min
+//= require mediaelement-and-player
+//= require waypoints.min
+//= require flexslider/jquery.flexslider-min
+//= require theme.plugins
+//= require theme

@@ -1,4 +1,4 @@
-@import "../_variables.scss";
+@import "../_variables";
 
 $black: #000;
 $lighter-black: #181818;
@@ -82,26 +82,26 @@ $yellow: #e9bf1d;
 }
 
 @mixin title-line {
- 
+
 	font: {
 		weight: 700;
 		size: 1.714em;
 	}
-  
+
 	margin-bottom: 50px;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
-	
+
 	@include line-through;
-	
+
 	span {
 		background: $white;
 		padding: 0 40px;
 		position: relative;
-		z-index: 2; 
+		z-index: 2;
 	}
-  
+
 }
 
 @mixin fontdefault-14 {
@@ -115,7 +115,7 @@ $yellow: #e9bf1d;
 @mixin title-border {
 	@include fontdefault-14;
 	border-bottom: 2px solid $black;
-	padding-bottom: 15px;	
+	padding-bottom: 15px;
 }
 
 @mixin transition {
