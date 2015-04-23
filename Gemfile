@@ -23,9 +23,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
-gem 'spree'
+
 gem 'bootstrap-sass'
-gem 'devise'
+# gem 'devise'
+#gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
 gem "font-awesome-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -47,3 +48,7 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'spree', '3.0.0'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
