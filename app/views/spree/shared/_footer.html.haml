@@ -2,79 +2,23 @@
   .container
     .upper-foot
       .row
-        .col-xs-6.col-sm-3
+        .col-xs-6.col-sm-4
           %h2 Contact detail
           %address
-            %i.fa.fa-map-marker
-            No.123 Pellentesque nec erat.
+            %i.fa.fa-phone
+            Phone. (123) 456-7890
             %br
-              Aenean semper, neque non faucibus.
-              %br
-                %i.fa.fa-phone
-                Phone. (123) 456-7890
-                %br
-                  %i.fa.fa-fax
-                  Fax. (123) 456-7890
-                  %br
-                    %i.fa.fa-envelope
-                    E-mail.
-                    %a{:href => "mailto:#"} first.last@example.com
-        .col-xs-6.col-sm-3
+            %i.fa.fa-envelope
+            E-mail.
+            %a{:href => "mailto:#"} first.last@example.com
+        .col-xs-6.col-sm-4
           %h2 Useful links
           %ul.list-unstyled
-            %li
-              %a{:href => "#"} Track Orders
-            %li
-              %a{:href => "#"} FAQs
-            %li
-              %a{:href => "#"} Services
-            %li
-              %a{:href => "#"} Free Credit Report
             %li
               %a{:href => "#"} Terms and Conditions
             %li
               %a{:href => "#"} Privacy Policy
-            %li
-              %a{:href => "#"} Community Guidelines
-        .col-xs-6.col-sm-3
-          %h2 Tags
-          %ul.list-inline.tagclouds
-            %li
-              %a{:href => "#"} Image
-            %li
-              %a{:href => "#"} Features
-            %li
-              %a{:href => "#"} Gallery
-            %li
-              %a{:href => "#"} Post Formats
-            %li
-              %a{:href => "#"} Typography
-            %li
-              %a{:href => "#"} WooCommerce
-            %li
-              %a{:href => "#"} Shortcodes
-            %li
-              %a{:href => "#"} Best Sellers
-            %li
-              %a{:href => "#"} Slideshow
-        .col-xs-6.col-sm-3
-          %h2 Don’t miss out
-          %p In venenatis neque a eros laoreet eu placerat erat suscipit. Fusce cursus, erat ut scelerisque.
-          %form.form-inline.form-newsletter{:role => "form"}
-            .form-group
-              %label.sr-only{:for => "exampleInputEmail2"} Email address
-              %input#exampleInputEmail2.form-control{:placeholder => "Enter your email here", :type => "email"}
-            %button.btn{:type => "submit"}
-              %i.fa.fa-caret-right
-    .below-foot
-      .row
-        .col-xs-6.copyrights
-          %p
-            Copyright © 2013 Flatize. Designed by
-            %a{:href => "http://pixelgeeklab.com/"} PixelGeekLab
-            %br
-              All rights reserved.
-        .col-xs-6.text-right
+        .col-xs-6.col-sm-4
           %ul.list-inline.social-list
             %li
               %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Facebook"}
@@ -91,3 +35,30 @@
             %li
               %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "RSS"}
                 %i.fa.fa-rss
+          %p
+            Copyright © 
+            = Date.today.year
+            Tupri. Designed by
+            %a{:href => "http://pixelgeeklab.com/"} PixelGeekLab
+            %br
+              All rights reserved.
+    / .below-foot
+    /   .row
+    /     .col-xs-6.copyrights
+    /     .col-xs-6.text-right
+    /       %ul.list-inline.social-list
+    /         %li
+    /           %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Facebook"}
+    /             %i.fa.fa-facebook
+    /         %li
+    /           %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Twitter"}
+    /             %i.fa.fa-twitter
+    /         %li
+    /           %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Google+"}
+    /             %i.fa.fa-google-plus
+    /         %li
+    /           %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "Pinterest"}
+    /             %i.fa.fa-pinterest
+    /         %li
+    /           %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :title => "RSS"}
+    /             %i.fa.fa-rss
