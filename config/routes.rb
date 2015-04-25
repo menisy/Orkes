@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
 
-  resource :welcome, controller: 'welcome', only: :index do
-    collection do
-      get 'trial'
-      get 'trial2'
-    end
-  end
+  # resource :welcome, controller: 'welcome', only: :index do
+  #   collection do
+  #     get 'trial'
+  #     get 'trial2'
+  #   end
+  # end
 
   #root to: 'welcome#index'
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"

@@ -1,0 +1,283 @@
+%header
+  #top
+    .container
+      %p.pull-left.text-note Free Shipping on all U.S orders over $50
+      %ul.nav.nav-pills.nav-top.navbar-right
+        %li.dropdown.langs
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %img{:alt => "English", :src => "/flags/en.gif"}
+              %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"}
+                %img{:alt => "AR", :src => "/flags/ar.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "CA", :src => "/flags/ca.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "DE", :src => "/flags/de.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "ES", :src => "/flags/es.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "ET", :src => "/flags/et.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "FA", :src => "/flags/fa.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "FR", :src => "/flags/fr.gif"}/
+            %li
+              %a{:href => "#"}
+                %img{:alt => "JA", :src => "/flags/ja.gif"}/
+        %li.dropdown.my-account
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            My Account
+            %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "#"} My Dashboard
+            %li
+              %a{:href => "#"} Account Information
+            %li
+              %a{:href => "#"} Address Book
+            %li
+              %a{:href => "#"} My Orders
+        %li.dropdown.menu-shop
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.fa.fa-shopping-cart
+            %span.shopping-bag 9
+          .dropdown-menu
+            %h3 Recently added item(s)
+            %ul.list-unstyled.list-thumbs-pro
+              %li.product
+                .product-thumb-info
+                  %a.product-remove{:href => "#"}
+                    %i.fa.fa-trash-o
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "/content/products/product-1.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Denim shirt
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Jackets
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  %a.product-remove{:href => "#"}
+                    %i.fa.fa-trash-o
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "/content/products/product-2.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Jackets
+                    %span.price 29.99 USD
+              %li.product
+                .product-thumb-info
+                  %a.product-remove{:href => "#"}
+                    %i.fa.fa-trash-o
+                  .product-thumb-info-image
+                    %a{:href => "shop-product-detail1.html"}
+                      %img{:alt => "", :src => "/content/products/product-3.jpg", :width => "60"}/
+                  .product-thumb-info-content
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Jackets
+                    %span.price 29.99 USD
+            %ul.list-inline.cart-subtotals.text-right
+              %li.cart-subtotal
+                %strong Subtotal
+              %li.price
+                %span.amount
+                  %strong $431
+            .cart-buttons.text-right
+              %button.btn.btn-white View Cart
+              %button.btn.btn-primary Checkout
+  %nav.navbar.navbar-default.navbar-main.navbar-main-slide{:role => "navigation"}
+    .container
+      .navbar-header
+        %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.logo{:href => "index.html"}
+          %img{:alt => "Flatize", :src => "/logo.png"}/
+      %ul.nav.navbar-nav.navbar-act.pull-right
+        %li.login
+          %a{:href => "javascript:void(0);"}
+            %i.fa.fa-user
+        %li.search
+          %a{"data-target" => ".bs-example-modal-lg", "data-toggle" => "modal", :href => "javascript:void(0);"}
+            %i.fa.fa-search
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav.pull-right
+          %li.dropdown.active
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Home
+            %ul.dropdown-menu
+              %li.active
+                %a{:href => "index-2.html"} Home Version 2
+              %li
+                %a{:href => "index-3.html"} Home Version 3
+              %li
+                %a{:href => "index-4.html"} Home Version 4
+          %li.dropdown.megamenu
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Shop
+            .dropdown-menu
+              .mega-menu-content
+                .row
+                  .col-md-4.hidden-sm.hidden-xs.menu-column
+                    %h3 Trends
+                    %ul.list-unstyled.sub-menu.list-thumbs-pro
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "/content/products/product-1.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Denim shirt
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "/content/products/product-2.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img{:alt => "", :src => "/content/products/product-3.jpg", :width => "60"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                            %span.item-cat
+                              %small
+                                %a{:href => "#"} Jackets
+                            %span.price 29.99 USD
+                  .col-md-2.menu-column
+                    %h3 Man
+                    %ul.list-unstyled.sub-menu
+                      %li
+                        %a{:href => "#"} Jackets
+                      %li
+                        %a{:href => "#"} Blazers
+                      %li
+                        %a{:href => "#"} Suits
+                      %li
+                        %a{:href => "#"} Trousers
+                      %li
+                        %a{:href => "#"} Jeans
+                      %li
+                        %a{:href => "#"} Shirts
+                      %li
+                        %a{:href => "#"} Sweatshirts &amp; Hoodies
+                      %li
+                        %a{:href => "#"} Swimwear
+                      %li
+                        %a{:href => "#"} Accessories
+                  .col-md-2.menu-column
+                    %h3 Woman
+                    %ul.list-unstyled.sub-menu
+                      %li
+                        %a{:href => "#"} Coats
+                      %li
+                        %a{:href => "#"} Outerwear
+                      %li
+                        %a{:href => "#"} Dresses
+                      %li
+                        %a{:href => "#"} Tops
+                      %li
+                        %a{:href => "#"} Trousers
+                      %li
+                        %a{:href => "#"} Shirts
+                      %li
+                        %a{:href => "#"} Jeans
+                      %li
+                        %a{:href => "#"} T-shirts
+                      %li
+                        %a{:href => "#"} Shoes
+                      %li
+                        %a{:href => "#"} Handbags
+                      %li
+                        %a{:href => "#"} Stock clearance
+                  .col-md-4.hidden-sm.hidden-xs.menu-column
+                    %h3 Explore new collection
+                    %ul.list-unstyled.sub-menu.list-md-pro
+                      %li.product
+                        .product-thumb-info
+                          .product-thumb-info-image
+                            %a{:href => "shop-product-detail1.html"}
+                              %img.img-responsive{:alt => "", :src => "/content/products/ad-1.png", :width => "330"}/
+                          .product-thumb-info-content
+                            %h4
+                              %a{:href => "shop-product-detail2.html"} Men’s Fashion and Style
+                            %p Whatever you’re looking for, be it the latest fashion trends, cool outfit ideas or new ways to wear your favourite pieces, we’ve got all the style inspiration you need.
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Pages
+            %ul.dropdown-menu
+              %li.dropdown-submenu
+                %a{:href => "#"} Shop
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "shop-full-width.html"} Shop - Full Width
+                  %li
+                    %a{:href => "shop-sidebar.html"} Shop - Sidebar
+                  %li
+                    %a{:href => "shop-list-sidebar.html"} Shop List - Sidebar
+                  %li
+                    %a{:href => "shop-product-detail1.html"} Shop - Product Detail 1
+                  %li
+                    %a{:href => "shop-product-detail2.html"} Shop - Product Detail 2
+                  %li
+                    %a{:href => "shop-cart-full.html"} Shop - Cart Full
+                  %li
+                    %a{:href => "shop-cart-sidebar.html"} Shop - Cart Sidebar
+                  %li
+                    %a{:href => "shop-checkout.html"} Shop - Checkout
+              %li
+                %a{:href => "index-white.html"} Mega Menu White
+              %li
+                %a{:href => "page-404.html"} 404 Error Page
+          %li
+            %a{:href => "shortcodes.html"} Shortcodes
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Blog
+            %ul.dropdown-menu
+              %li
+                %a{:href => "blog-sidebar.html"} Blog Sidebar
+              %li
+                %a{:href => "blog-mini-sidebar.html"} Blog Mini Sidebar
+              %li
+                %a{:href => "blog-masonry.html"} Blog Masonry
+              %li
+                %a{:href => "blog-single.html"} Blog Single
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Contact
+            %ul.dropdown-menu
+              %li
+                %a{:href => "page-contact1.html"} Contact Version 1
+              %li
+                %a{:href => "page-contact2.html"} Contact Version 2
+      / /.nav-collapse
+    / /.container-fluid
