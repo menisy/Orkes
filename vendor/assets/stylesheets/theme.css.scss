@@ -36,7 +36,7 @@ body {
 	> li {
 		> a {
 			line-height: 1.6;
-			padding: 5px 20px 8px;	
+			padding: 5px 20px 8px;
 			&:hover, &:focus {
 				background-color: transparent;
 			}
@@ -145,7 +145,7 @@ body {
 				@include main-color;
 			}
 		}
-	} /* end dropdown-menu*/	
+	} /* end dropdown-menu*/
 }
 
 .cart-buttons {
@@ -247,7 +247,7 @@ body {
 		@include main-color;
 		background-color: transparent;
 	}
-	
+
 	.open > a:after {
 		bottom: 0;
 		height: 0;
@@ -260,12 +260,12 @@ body {
 		position: absolute;
 		width: 0;
 	}
-	
+
 	.open .dropdown-menu > li > a {
 		line-height: 1.6;
 		padding: 5px 20px 8px;
 	}
-	
+
 	.dropdown-menu {
 		padding: 10px 0;
 		li a {
@@ -312,7 +312,7 @@ body {
 	&:hover > .dropdown-menu {
 		display: block;
 	}
-	
+
 	&:hover > a:after {
 		border-left-color: $white;
 	}
@@ -326,7 +326,7 @@ body {
 		right: 0;
 		.sub-menu > li > a {
 			display: block;
-			padding-bottom: 10px;	
+			padding-bottom: 10px;
 			white-space: nowrap;
 		}
 	}
@@ -573,7 +573,7 @@ body {
 	.owl-controls {
 		margin-top: -25px;
 		top: 50%;
-	
+
 		.owl-buttons .owl-prev {
 			float: left;
 		}
@@ -715,7 +715,7 @@ body {
 
 /* lookbook */
 .lookbook {
-	background: url("../images/bg-wood.jpg") repeat;
+	background: url("bg-wood.jpg") repeat;
     color: $white;
     font-size: .929em;
     margin-bottom: 60px;
@@ -755,7 +755,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-image: url(../images/content/slides/bg-parallax.jpg);
+	background-image: url(content/slides/bg-parallax.jpg);
 	color: $white;
 	.item {
 		display: table;
@@ -776,10 +776,10 @@ body {
 				font-size: .5em;
 				padding: 15px 0 0;
 				position: relative;
-				
+
 				&:after {
 					border-top: 1px solid $white;
-					content: "";  
+					content: "";
 					left: 50%;
 					margin-left: -25px;
 					position: absolute;
@@ -802,8 +802,8 @@ body {
 }
 
 .parallax-shop {
-	background-image: url(../images/content/slides/bg-parallax-2.jpg);
-	position: relative; 
+	background-image: url(content/slides/bg-parallax-2.jpg);
+	position: relative;
 	&:after {
 		background-color: rgba($black, 0.5);
 		content: "";
@@ -883,7 +883,7 @@ body {
 			font-size: 2.571em;
 			margin-right: 10px;
 		}
-		
+
 		+ li {
 			background-color: rgba($primary-color, 0.9);
 			+ li {
@@ -982,7 +982,7 @@ body {
 .page-top-md {
 	@extend .page-top;
 	background-color: $dark;
-	background-image: url(../images/bg-blog.jpg);
+	background-image: url(bg-blog.jpg);
 	background-repeat: no-repeat;
 	.container {
 		height: 202px;
@@ -992,7 +992,7 @@ body {
 .page-top-lg {
 	@extend .page-top;
 	background-color: $dark;
-	background-image: url(../images/bg-contact.jpg);
+	background-image: url(bg-contact.jpg);
 	background-repeat: no-repeat;
 	.container {
 		height: 384px;
@@ -1004,7 +1004,7 @@ body {
 	}
 }
 
-/* contact-content */	
+/* contact-content */
 .contact-content {
 	margin-bottom: 60px;
 	h3 {
@@ -1045,7 +1045,7 @@ body {
 			}
 		}
 	}
-	
+
 }
 
 .block {
@@ -1055,7 +1055,7 @@ body {
 	.form-search2 {
 		margin: 0;
 	}
-	
+
 }
 
 /* footer */
@@ -1115,12 +1115,12 @@ body {
 	font-size: .785em;
 }
 
-.social-list { 
+.social-list {
 	li + li {
 		margin-left: 15px;
 	}
 	a {
-		font-size: 1.571em;	
+		font-size: 1.571em;
 	}
 }
 
@@ -1137,13 +1137,13 @@ body {
 		float: none;
 		text-align: center;
 	}
-	
+
 	.navbar-collapse {
 		border-bottom: 1px solid $dark-grey;
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+
 	.navbar-nav {
 		> li > a {
 			padding: 18px 20px 17px;
@@ -1177,9 +1177,9 @@ body {
 			@include main-bg;
 		}
 	}
-	
+
 }
-	
+
 /* home 4 */
 .navbar-main-drop {
 	.menu-shop {
@@ -1211,13 +1211,13 @@ body {
 	.navbar-collapse.collapse {
 		display: none !important;
 	}
-	
+
 	.navbar-collapse.in {
-		overflow-y: auto;	
+		overflow-y: auto;
 	}
-	
+
 	.collapse.in {
-		display: block !important;	
+		display: block !important;
 	}
 	.navbar-left, .pull-right {
 		float: none !important;
@@ -1238,7 +1238,7 @@ body {
 		-moz-transition: -moz-transform .2s ease-in-out;
 		-webkit-transition: -webkit-transform .2s ease-in-out;
 		transition: transform .2s ease-in-out;
-	
+
 		.navbar-nav > li {
 			float: none;
 			> a {
@@ -1272,20 +1272,20 @@ body {
 			padding: 10px 20px !important;
 			position: static;
 		}
-		
+
 		.dropdown-submenu > .dropdown-menu {
 			border-top: none;
 			margin-top: 0;
 		}
 	}
-	
+
 	.collapse.in {
 		-moz-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
-	
+
 	.navbar-nav {
 		.open > a:after {
 			display: none;
@@ -1322,7 +1322,7 @@ body {
 			}
 		}
 	}
-	
+
 	.dropdown-submenu {
 		> a:after {
 			display: none;
@@ -1331,7 +1331,7 @@ body {
 			display: block;
 		}
 	}
-	
+
 	.navbar-collapse .navbar-nav {
 		> li > a {
 			&:hover, &:focus {
@@ -1352,7 +1352,7 @@ body {
 			color: $white;
 		}
 	}
-	
+
 	/* end main nav */
 }
 
@@ -1471,7 +1471,7 @@ body {
 		padding-left: 50px;
 		padding-right: 50px;
 	}
-	
+
 	.main-slide-boxed .container {
 		margin-top: 0;
 		padding-left: 0;
