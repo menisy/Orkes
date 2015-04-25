@@ -9,3 +9,13 @@
 
 Spree::Core::Engine.load_seed if defined?(Spree::Core)
 Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
+
+## Seeding default admin
+admin = Spree::User.new
+admin.email = "admin@spree.com"
+admin.password, admin.password_confirmation = "spree@123"
+admin.save
+
+admin_role = Spree::Role.find_by name: 'admin'
+admin_role.users << admin
+admin_role.save
