@@ -1,0 +1,12 @@
+.modal.fade.bs-example-modal-lg.search-wrapper{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-lg
+    .modal-content
+      %p.clearfix
+        %button.close{"data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+          %span.sr-only Close
+      %form.form-inline.form-search{:role => "form"}
+        .form-group
+          %label.sr-only{:for => "textsearch"} Enter text search
+          %input#textsearch.form-control.input-lg{:placeholder => "Enter text search", :type => "text"}
+        %button.btn.btn-white{:type => "submit"} Search
