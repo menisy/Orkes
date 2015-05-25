@@ -57,105 +57,33 @@
         %span Top Selling
       .row
         #owl-product-slide.owl-carousel.product-slide
-          .col-md-12.animation
-            .item.product
-              .product-thumb-info
-                .product-thumb-info-image
-                  %span.product-thumb-info-act
-                    %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
-                      %span
-                        %i.fa.fa-external-link
-                    %a.add-to-cart-product{:href => "shop-cart-full.html"}
-                      %span
-                        %i.fa.fa-shopping-cart
-                  = image_tag "content/products/product-1.jpg", class: "img-responsive"
-                .product-thumb-info-content
-                  %span.price.pull-right 29.99 USD
-                  %h4
-                    %a{:href => "shop-product-detail2.html"} Denim shirt
-                  %span.item-cat
-                    %small
-                      %a{:href => "#"} Jackets
-          .col-md-12.animation
-            .item.product
-              .product-thumb-info
-                .product-thumb-info-image
-                  %span.product-thumb-info-act
-                    %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
-                      %span
-                        %i.fa.fa-external-link
-                    %a.add-to-cart-product{:href => "shop-cart-full.html"}
-                      %span
-                        %i.fa.fa-shopping-cart
-                  = image_tag "content/products/product-2.jpg", class: "img-responsive"
-                .product-thumb-info-content
-                  %span.price.pull-right 25.99 USD
-                  %h4
-                    %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
-                  %span.item-cat
-                    %small
-                      %a{:href => "#"} Shirts
-          .col-md-12.animation
-            .item.product
-              %a{:href => "shop-product-detail1.html"}
-                %span.bag.bag-hot Hot
-              .product-thumb-info
-                .product-thumb-info-image
-                  %span.product-thumb-info-act
-                    %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
-                      %span
-                        %i.fa.fa-external-link
-                    %a.add-to-cart-product{:href => "shop-cart-full.html"}
-                      %span
-                        %i.fa.fa-shopping-cart
-                  = image_tag "content/products/product-3.jpg", class: "img-responsive"
-                .product-thumb-info-content
-                  %span.price.pull-right 25.99 USD
-                  %h4
-                    %a{:href => "shop-product-detail2.html"} Contrasting shirt
-                  %span.item-cat
-                    %small
-                      %a{:href => "#"} Stock clearance
-          .col-md-12.animation
-            .item.product
-              .product-thumb-info
-                .product-thumb-info-image
-                  %span.product-thumb-info-act
-                    %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
-                      %span
-                        %i.fa.fa-external-link
-                    %a.add-to-cart-product{:href => "shop-cart-full.html"}
-                      %span
-                        %i.fa.fa-shopping-cart
-                  = image_tag "content/products/product-4.jpg", class: "img-responsive"
-                .product-thumb-info-content
-                  %span.price.pull-right 59.99 USD
-                  %h4
-                    %a{:href => "shop-product-detail2.html"} Waistcoat with top stitching
-                  %span.item-cat
-                    %small
-                      %a{:href => "#"} Blazers
-          .col-md-12.animation
-            .item.product
-              %a{:href => "shop-product-detail1.html"}
-                %span.bag.bag-cool Cool
-              .product-thumb-info
-                .product-thumb-info-image
-                  %span.product-thumb-info-act
-                    %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
-                      %span
-                        %i.fa.fa-external-link
-                    %a.add-to-cart-product{:href => "shop-cart-full.html"}
-                      %span
-                        %i.fa.fa-shopping-cart
-                  = image_tag "content/products/product-5.jpg", class: "img-responsive"
-                .product-thumb-info-content
-                  %span.price.pull-right 39.99 USD
-                  %h4
-                    %a{:href => "shop-product-detail2.html"} Loose fit ripped jeans
-                  %span.item-cat
-                    %small
-                      %a{:href => "#"} Jeans
+          - @products.each do |product|
+            .col-md-12.animation
+              .item.product
+                %a{:href => "shop-product-detail1.html"}
+                  %span.bag.bag-hot Hot
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    = image_tag "content/products/#{product.variants.first.images.first.attachment_file_name}", class: "img-responsive"
+                    / = image_tag(@products.find(1).variants.first.images.first.attachment.url(:single)), class: "img-responsive"
+
+                  .product-thumb-info-content
+                    %span.price.pull-right
+                      = product.variants.first.price.to_f  
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} 
+                        = product.name
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Dress
+          
   / End Top Selling
   / Begin Lookbook Women
   %section#lookbook
@@ -173,11 +101,11 @@
       / Nav tabs
       %ul.nav.nav-tabs.pro-tabs.text-center.animation{:role => "tablist"}
         %li.active
-          %a{"data-toggle" => "tab", :href => "#man", :role => "tab"} Man
+          %a{"data-toggle" => "tab", :href => "#man", :role => "tab"} Dresses
         %li
-          %a{"data-toggle" => "tab", :href => "#woman", :role => "tab"} Woman
+          %a{"data-toggle" => "tab", :href => "#woman", :role => "tab"} Skirts
         %li
-          %a{"data-toggle" => "tab", :href => "#accesories", :role => "tab"} Accesories
+          %a{"data-toggle" => "tab", :href => "#accesories", :role => "tab"} Tonics
       / Tab panes
       .tab-content
         #man.tab-pane.active
@@ -193,14 +121,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-5.jpg", class: "img-responsive"
+                    = image_tag "content/products/darkRedDress.jpeg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 39.99 USD
+                    %span.price.pull-right 380 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Loose fit ripped jeans
+                      %a{:href => "shop-product-detail2.html"} Loose Drak Red Dress
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Jeans
+                        %a{:href => "#"} Dresses
             .col-xs-6.col-sm-3.animation
               .product
                 .product-thumb-info
@@ -212,14 +140,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-6.jpg", class: "img-responsive"
+                    = image_tag "content/products/offwhiteDress.jpeg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 289.99 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Linen shirt with ribbon at the front
+                      %a{:href => "shop-product-detail2.html"} OffWhite Dress with black Lace
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Shirts
+                        %a{:href => "#"} Dresses
             .col-xs-6.col-sm-3.animation
               .product
                 %a{:href => "shop-product-detail1.html"}
@@ -233,14 +161,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-7.jpg", class: "img-responsive"
+                    = image_tag "content/products/black-tonic.jpg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 250 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Striped sweater
+                      %a{:href => "shop-product-detail2.html"} Black Chiffon Tonic
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Stock clearance
+                        %a{:href => "#"} Tonics
             .col-xs-6.col-sm-3.animation
               .product
                 .product-thumb-info
@@ -252,14 +180,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-8.jpg", class: "img-responsive"
+                    = image_tag "content/products/black-dress.jpg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 400 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Checked shirt with pocket
+                      %a{:href => "shop-product-detail2.html"} Basic long sleeves Black Dress
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Shirts
+                        %a{:href => "#"} Dresses
           .row
             .col-xs-6.col-sm-3.animation
               .product
@@ -272,14 +200,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-1.jpg", class: "img-responsive"
+                    = image_tag "content/products/black-skirt.jpg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 290.99 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Denim shirt
+                      %a{:href => "shop-product-detail2.html"} Back Maxi
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Jackets
+                        %a{:href => "#"} Skirts
             .col-xs-6.col-sm-3.animation
               .product
                 %a{:href => "shop-product-detail1.html"}
@@ -293,14 +221,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-2.jpg", class: "img-responsive"
+                    = image_tag "content/products/pailYellowSkirt.jpg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 200 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Poplin shirt with fine pleated bands
+                      %a{:href => "shop-product-detail2.html"} Pail Yellow Summer Skirt
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Shirts
+                        %a{:href => "#"} Skirts
             .col-xs-6.col-sm-3.animation
               .product
                 .product-thumb-info
@@ -312,14 +240,14 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-3.jpg", class: "img-responsive"
+                    = image_tag "content/products/darkGreenDress.jpeg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 400 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Contrasting shirt
+                      %a{:href => "shop-product-detail2.html"} Dark Green Long Sleeves Dress
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Stock clearance
+                        %a{:href => "#"} Dress
             .col-xs-6.col-sm-3.animation
               .product
                 %a{:href => "shop-product-detail1.html"}
@@ -333,14 +261,94 @@
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}
                         %span
                           %i.fa.fa-shopping-cart
-                    = image_tag "content/products/product-4.jpg", class: "img-responsive"
+                    = image_tag "content/products/darkRed-Skirt.jpg", class: "img-responsive"
                   .product-thumb-info-content
-                    %span.price.pull-right 29.99 USD
+                    %span.price.pull-right 300 EGP
                     %h4
-                      %a{:href => "shop-product-detail2.html"} Waistcoat with top stitching
+                      %a{:href => "shop-product-detail2.html"} Maxi Chiffon Dark Red Skirt
                     %span.item-cat
                       %small
-                        %a{:href => "#"} Blazers
+                        %a{:href => "#"} Skirts
+                   
+          .row
+            .col-xs-6.col-sm-3.animation
+              .product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    = image_tag "content/products/darkRedDress.jpeg", class: "img-responsive"
+                  .product-thumb-info-content
+                    %span.price.pull-right 380 EGP
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Loose Drak Red Dress
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Dresses
+            .col-xs-6.col-sm-3.animation
+              .product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    = image_tag "content/products/offwhiteDress.jpeg", class: "img-responsive"
+                  .product-thumb-info-content
+                    %span.price.pull-right 289.99 EGP
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} OffWhite Dress with black Lace
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Dresses
+            .col-xs-6.col-sm-3.animation
+              .product
+                %a{:href => "shop-product-detail1.html"}
+                  %span.bag.bag-new New
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    = image_tag "content/products/black-tonic.jpg", class: "img-responsive"
+                  .product-thumb-info-content
+                    %span.price.pull-right 250 EGP
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Black Chiffon Tonic
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Tonics
+            .col-xs-6.col-sm-3.animation
+              .product
+                .product-thumb-info
+                  .product-thumb-info-image
+                    %span.product-thumb-info-act
+                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                        %span
+                          %i.fa.fa-external-link
+                      %a.add-to-cart-product{:href => "shop-cart-full.html"}
+                        %span
+                          %i.fa.fa-shopping-cart
+                    = image_tag "content/products/black-dress.jpg", class: "img-responsive"
+                  .product-thumb-info-content
+                    %span.price.pull-right 400 EGP
+                    %h4
+                      %a{:href => "shop-product-detail2.html"} Basic long sleeves Black Dress
+                    %span.item-cat
+                      %small
+                        %a{:href => "#"} Dresses             
         #woman.tab-pane
           .row
             .col-xs-6.col-sm-3.animation
