@@ -47,7 +47,8 @@
     = render partial: 'spree/shared/footer'
     / End footer
     / Begin Quickview
-    = render partial: 'spree/shared/product_details'
+    = @products.each do |product|
+      = render partial: 'spree/shared/product_details', locals: {prod: product}
     / End Quickview
     / Begin Search
     = render partial: 'spree/shared/search'

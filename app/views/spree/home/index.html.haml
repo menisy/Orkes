@@ -58,6 +58,7 @@
       .row
         #owl-product-slide.owl-carousel.product-slide
           - @products.each do |product|
+            / = render partial: 'spree/shared/product_details', locals: {prod: product}
             .col-md-12.animation
               .item.product
                 %a{:href => "shop-product-detail1.html"}
@@ -65,7 +66,7 @@
                 .product-thumb-info
                   .product-thumb-info-image
                     %span.product-thumb-info-act
-                      %a.view-product{"data-target" => ".quickview-wrapper", "data-toggle" => "modal", :href => "javascript:void(0);"}
+                      %a.view-product{"data-target" => ".quickview-wrapper.prod#{product.id}", "data-toggle" => "modal", :href => "javascript:void(0);"}
                         %span
                           %i.fa.fa-external-link
                       %a.add-to-cart-product{:href => "shop-cart-full.html"}

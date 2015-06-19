@@ -1,148 +1,148 @@
-.modal.fade.quickview-wrapper{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog.modal-lg
-    .modal-content
-      %button.close{"data-dismiss" => "modal", :type => "button"}
-        %span{"aria-hidden" => "true"} ×
-        %span.sr-only Close
-      .product-detail
-        .row
-          .col-sm-6
-            .product-preview
-              %ul#slider1.bxslider
-                %li
-                  = image_tag "content/products/#{@products.find(1).variants.first.images.first.attachment_file_name}", class: "img-responsive"
-                %li
-                  %img.img-responsive{:alt => "", :src => "content/products/#{@products.find(1).variants.first.images.first.attachment_file_name}"}/
-                %li
-                  %img.img-responsive{:alt => "", :src => "content/products/#{@products.find(1).variants.first.images.first.attachment_file_name}"}/
-                %li
-                  %img.img-responsive{:alt => "", :src => "content/products/#{@products.find(1).variants.first.images.first.attachment_file_name}"}/
-                %li
-                  %img.img-responsive{:alt => "", :src => "content/products/#{@products.find(1).variants.first.images.first.attachment_file_name}"}/
-              %ul.list-inline.bx-pager
-                %li
-                  %a{"data-slide-index" => "0", :href => ""}
-                    %img.img-responsive{:alt => "", :src => "/content/products/product-thumb.jpg"}/
-                %li
-                  %a{"data-slide-index" => "1", :href => ""}
-                    %img.img-responsive{:alt => "", :src => "/content/products/product-thumb-1.jpg"}/
-                %li
-                  %a{"data-slide-index" => "2", :href => ""}
-                    %img.img-responsive{:alt => "", :src => "/content/products/product-thumb-2.jpg"}/
-                %li
-                  %a{"data-slide-index" => "3", :href => ""}
-                    %img.img-responsive{:alt => "", :src => "/content/products/product-thumb-3.jpg"}/
-                %li
-                  %a{"data-slide-index" => "4", :href => ""}
-                    %img.img-responsive{:alt => "", :src => "/content/products/product-thumb-4.jpg"}/
-          .col-sm-6
-            .summary.entry-summary
-              %h3 
-                = @products.find(1).description
-              .reviews-counter.clearfix
-                .rating.five-stars.pull-left
-                  .star-rating
-                  .star-bg
-                %span 3 Reviews
-              %p.price
-                %span.amount
-                  = @products.find(1).variants.first.price
-              %ul.list-inline.list-select.clearfix
-                %li
-                  .list-sort
-                    %select.formDropdown
-                      %option Select Size
-                      %option XS
-                      %option S
-                      %option M
-                      %option L
-                      %option XL
-                      %option XXL
-                %li.color
-                  %a.color1{:href => "#"}
-                %li.color
-                  %a.color2{:href => "#"}
-                %li.color
-                  %a.color3{:href => "#"}
-                %li.color
-                  %a.color4{:href => "#"}
-              %form.cart{:method => "post"}
-                .quantity.pull-left
-                  %input.minus{:type => "button", :value => "-"}
-                    %input.input-text.qty{:min => "1", :name => "quantity", :step => "1", :title => "Qty", :type => "text", :value => "1"}
-                      %input.plus{:type => "button", :value => "+"}
-                %a.btn.btn-grey{:href => "#"}
-                  %span
-                    %i.fa.fa-heart
-                %button.btn.btn-primary.btn-icon{:href => "#"}
-                  %i.fa.fa-shopping-cart
-                  Add to cart
-              %ul.list-unstyled.product-meta
-                %li Sku: 54329843
-                %li
-                  Categories:
-                  %a{:href => "#"} Leather
-                  %a{:href => "#"} Jeans
-                  %a{:href => "#"} Men
-                %li
-                  Tags:
-                  %a{:href => "#"} Shoes
-                  %a{:href => "#"} Jeans
-                  %a{:href => "#"} Men
-                  %a{:href => "#"} T-shirt
-              #accordion.panel-group
-                .panel.panel-default
-                  .panel-heading
-                    %h4.panel-title
-                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"} Description
-                  #collapseOne.panel-collapse.collapse.in
-                    .panel-body
-                      %p Korem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. qui dolorem ipsum quia dolor sit amet.
-                .panel.panel-default
-                  .panel-heading
-                    %h4.panel-title
-                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"} Addition Information
-                  #collapseTwo.panel-collapse.collapse
-                    .panel-body
-                      %p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                .panel.panel-default
-                  .panel-heading
-                    %h4.panel-title
-                      %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"} Reviews (3)
-                  #collapseThree.panel-collapse.collapse
-                    .panel-body.post-comments
-                      %ul.comments
-                        %li
-                          .comment
-                            .img-circle
-                              %img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
-                              %span.comment-by
-                                %strong Frank Reman
-                              %span.date
-                                %small
-                                  %i.fa.fa-clock-o
-                                  January 12, 2013
-                              %p Lorem ipsum dolor sit amet.
-                        %li
-                          .comment
-                            .img-circle
-                              %img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
-                              %span.comment-by
-                                %strong Frank Reman
-                              %span.date
-                                %small
-                                  %i.fa.fa-clock-o
-                                  July 11, 2014
-                              %p Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae
-                        %li
-                          .comment
-                            .img-circle
-                              %img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
-                              %span.comment-by
-                                %strong Frank Reman
-                              %span.date
-                                %small
-                                  %i.fa.fa-clock-o
-                                  July 11, 2014
-                              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+.modal.fade.quickview-wrapper{class: "prod#{prod.id}", "aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog.modal-lg
+		.modal-content
+			%button.close{"data-dismiss" => "modal", :type => "button"}
+				%span{"aria-hidden" => "true"} ×
+				%span.sr-only Close
+			.product-detail
+				.row
+					.col-sm-6
+						.product-preview
+							%ul#slider1.bxslider
+								%li
+									= image_tag "content/products/#{prod.variants.first.images.first.attachment_file_name}", class: "img-responsive"
+								%li
+									%img.img-responsive{:alt => "", :src => "content/products/#{prod.variants.first.images.first.attachment_file_name}"}/
+								%li
+									%img.img-responsive{:alt => "", :src => "content/products/#{prod.variants.first.images.first.attachment_file_name}"}/
+								%li
+									%img.img-responsive{:alt => "", :src => "content/products/#{prod.variants.first.images.first.attachment_file_name}"}/
+								%li
+									%img.img-responsive{:alt => "", :src => "content/products/#{prod.variants.first.images.first.attachment_file_name}"}/
+							%ul.list-inline.bx-pager
+								%li
+									%a{"data-slide-index" => "0", :href => ""}
+										%img.img-responsive{:alt => "", :src => "/content/products/product-thumb.jpg"}/
+								%li
+									%a{"data-slide-index" => "1", :href => ""}
+										%img.img-responsive{:alt => "", :src => "/content/products/product-thumb-1.jpg"}/
+								%li
+									%a{"data-slide-index" => "2", :href => ""}
+										%img.img-responsive{:alt => "", :src => "/content/products/product-thumb-2.jpg"}/
+								%li
+									%a{"data-slide-index" => "3", :href => ""}
+										%img.img-responsive{:alt => "", :src => "/content/products/product-thumb-3.jpg"}/
+								%li
+									%a{"data-slide-index" => "4", :href => ""}
+										%img.img-responsive{:alt => "", :src => "/content/products/product-thumb-4.jpg"}/
+					.col-sm-6
+						.summary.entry-summary
+							%h3 
+								= prod.description
+							.reviews-counter.clearfix
+								.rating.five-stars.pull-left
+									.star-rating
+									.star-bg
+								%span 3 Reviews
+							%p.price
+								%span.amount
+									= prod.variants.first.price
+							%ul.list-inline.list-select.clearfix
+								%li
+									.list-sort
+										%select.formDropdown
+											%option Select Size
+											%option XS
+											%option S
+											%option M
+											%option L
+											%option XL
+											%option XXL
+								%li.color
+									%a.color1{:href => "#"}
+								%li.color
+									%a.color2{:href => "#"}
+								%li.color
+									%a.color3{:href => "#"}
+								%li.color
+									%a.color4{:href => "#"}
+							%form.cart{:method => "post"}
+								.quantity.pull-left
+									%input.minus{:type => "button", :value => "-"}
+										%input.input-text.qty{:min => "1", :name => "quantity", :step => "1", :title => "Qty", :type => "text", :value => "1"}
+											%input.plus{:type => "button", :value => "+"}
+								%a.btn.btn-grey{:href => "#"}
+									%span
+										%i.fa.fa-heart
+								%button.btn.btn-primary.btn-icon{:href => "#"}
+									%i.fa.fa-shopping-cart
+									Add to cart
+							%ul.list-unstyled.product-meta
+								%li Sku: 54329843
+								%li
+									Categories:
+									%a{:href => "#"} Leather
+									%a{:href => "#"} Jeans
+									%a{:href => "#"} Men
+								%li
+									Tags:
+									%a{:href => "#"} Shoes
+									%a{:href => "#"} Jeans
+									%a{:href => "#"} Men
+									%a{:href => "#"} T-shirt
+							#accordion.panel-group
+								.panel.panel-default
+									.panel-heading
+										%h4.panel-title
+											%a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"} Description
+									#collapseOne.panel-collapse.collapse.in
+										.panel-body
+											%p Korem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											%p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. qui dolorem ipsum quia dolor sit amet.
+								.panel.panel-default
+									.panel-heading
+										%h4.panel-title
+											%a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"} Addition Information
+									#collapseTwo.panel-collapse.collapse
+										.panel-body
+											%p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								.panel.panel-default
+									.panel-heading
+										%h4.panel-title
+											%a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"} Reviews (3)
+									#collapseThree.panel-collapse.collapse
+										.panel-body.post-comments
+											%ul.comments
+												%li
+													.comment
+														.img-circle
+															%img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
+															%span.comment-by
+																%strong Frank Reman
+															%span.date
+																%small
+																	%i.fa.fa-clock-o
+																	January 12, 2013
+															%p Lorem ipsum dolor sit amet.
+												%li
+													.comment
+														.img-circle
+															%img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
+															%span.comment-by
+																%strong Frank Reman
+															%span.date
+																%small
+																	%i.fa.fa-clock-o
+																	July 11, 2014
+															%p Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae
+												%li
+													.comment
+														.img-circle
+															%img.avatar{:alt => "", :src => "/content/blog/avatar.png", :width => "50"}                                 .comment-block
+															%span.comment-by
+																%strong Frank Reman
+															%span.date
+																%small
+																	%i.fa.fa-clock-o
+																	July 11, 2014
+															%p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
