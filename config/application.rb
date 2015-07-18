@@ -35,5 +35,6 @@ module Tupri
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.secret_key_base = 'wusCW38tHWORb5X8AlFMcIfvpqU76Vf60DsdHpwe' 
   end
 end
