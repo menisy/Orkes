@@ -76,3 +76,8 @@ config/application.yml
 libpeerconnection.log
 dump.rdb
 public/spree
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
